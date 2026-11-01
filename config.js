@@ -21,34 +21,35 @@ export default {
   SESSION_ID: process.env.SESSION_ID || "",
   PREFIX: process.env.PREFIX || ".",
   CHATBOT: process.env.CHATBOT || "off",
-  BOT_NAME: process.env.BOT_NAME || "KHAN-MD",
+  BOT_NAME: process.env.BOT_NAME || "RFK MOS",
   MODE: process.env.MODE || "private",
-  REPO: process.env.REPO || "https://github.com/JawadTechYT/KHAN-MD",
+  REPO: process.env.REPO || "https://github.com/atmods/KHAN-MD",
   WEBPAIR: process.env.WEBPAIR || "https://khanmd-pairx.onrender.com",
-  NEWSLETTERID: process.env.NEWSLETTERID || "120363426563532140@newsletter",
- 
+  NEWSLETTER_ID: process.env.NEWSLETTER_ID || "",
+
   // ===== OWNER & DEVELOPER SETTINGS =====
-  OWNER_NUMBER: process.env.OWNER_NUMBER || "92342*******",
-  OWNER_NAME: process.env.OWNER_NAME || "Jᴀᴡᴀᴅ TᴇᴄʜX",
-  SUDO: process.env.SUDO 
-    ? process.env.SUDO.split(',').map(s => s.trim()) 
-    : ["123@lid"],
-  BANNED: process.env.BANNED 
-    ? process.env.BANNED.split(',').map(s => s.trim()) 
+  OWNER_NUMBER: process.env.OWNER_NUMBER || "",
+  OWNER_NAME: process.env.OWNER_NAME || "RFK CHEKUTHAAN",
+  SUDO: process.env.SUDO
+    ? process.env.SUDO.split(',').map(s => s.trim())
+    : [""],
+  BANNED: process.env.BANNED
+    ? process.env.BANNED.split(',').map(s => s.trim())
     : [],
-  STATUS_LIKE_EMOJIS: process.env.STATUS_LIKE_EMOJIS 
-    ? process.env.STATUS_LIKE_EMOJIS.split(',').map(e => e.trim()) 
-    : ["❤️", "🔥", "👍", "😍", "💯"],
-  REACT_EMOJIS: process.env.REACT_EMOJIS 
-    ? process.env.REACT_EMOJIS.split(',').map(e => e.trim()) 
-    : ["❤️", "🔥", "👍", "😍", "😂", "😮", "😎", "🥰", "👋", "🤝", "💯", "✨", "⭐", "🎉", "🤗", "😊", "🙌", "💪", "👏", "✅", "🎈", "🎊", "🏆", "⚡", "💫", "👌", "🤙", "💖", "💕", "💗", "👑", "💎", "🌟", "🎯", "🎨", "🎭", "🎪", "🎢", "🎡", "🎠"],
-  OWNER_EMOJIS: process.env.OWNER_EMOJIS 
-    ? process.env.OWNER_EMOJIS.split(',').map(e => e.trim()) 
-    : ["👑", "💎", "⭐", "✨", "🔥", "💯", "✅", "🎉", "🤖", "⚡", "💫", "🌟", "🏆", "👾", "🚀", "💪", "🎯", "🔱", "♾️", "⚜️"],
-  LINK_WARNINGS: process.env.LINK_WARNINGS 
-    ? process.env.LINK_WARNINGS.split(',').map(s => s.trim()).filter(s => s) 
+
+  STATUS_LIKE_EMOJIS: process.env.STATUS_LIKE_EMOJIS
+    ? process.env.STATUS_LIKE_EMOJIS.split(',').map(e => e.trim())
+    : ["❤️", "💯"],
+  REACT_EMOJIS: process.env.REACT_EMOJIS
+    ? process.env.REACT_EMOJIS.split(',').map(e => e.trim())
+    : ["❤️", "🔥", "😮", "😎", "🥰", "👏", "🤝", "💯", "✨"],
+  OWNER_EMOJIS: process.env.OWNER_EMOJIS
+    ? process.env.OWNER_EMOJIS.split(',').map(e => e.trim())
+    : ["✨", "💎", "👑", "🔥", "🚀", "⚡", "🌟"],
+  LINK_WARNINGS: process.env.LINK_WARNINGS
+    ? process.env.LINK_WARNINGS.split(',').map(s => s.trim())
     : [],
- 
+
   // ===== HEROKU SETTINGS =====
   HEROKU_API_KEY: process.env.HEROKU_API_KEY || "",
   HEROKU_APP_NAME: process.env.HEROKU_APP_NAME || "",
@@ -56,18 +57,18 @@ export default {
   // ===== AUTO-RESPONSE SETTINGS =====
   AUTO_REPLY: process.env.AUTO_REPLY || "false",
   AUTO_STATUS_REPLY: process.env.AUTO_STATUS_REPLY || "false",
-  AUTO_STATUS_MSG: process.env.AUTO_STATUS_MSG || "*KHAN MD VIEWED YOUR STATUS 🤖*",
+  AUTO_STATUS_MSG: process.env.AUTO_STATUS_MSG || "RFK MOS VIEWED",
   READ_MESSAGE: process.env.READ_MESSAGE || "false",
-  REJECT_MSG: process.env.REJECT_MSG || "*📞 ᴄαℓℓ ɴσт αℓℓσωє∂ ιɴ тнιѕ ɴᴜмвєʀ уσυ ∂σɴт нανє ᴘєʀмιѕѕισɴ 📵*",
+  REJECT_CALL: process.env.REJECT_CALL || "",
 
   // ===== REACTION SETTINGS =====
   AUTO_REACT: process.env.AUTO_REACT || "false",
   OWNER_REACT: process.env.OWNER_REACT || "false",
-  STICKER_NAME: process.env.STICKER_NAME || "KHAN-MD",
+  STICKER_NAME: process.env.STICKER_NAME || "RFK MOS",
   AUTO_STICKER: process.env.AUTO_STICKER || "false",
   AUTO_VOICE: process.env.AUTO_VOICE || "false",
   STATUS_SENDER: process.env.STATUS_SENDER || "true",
-  
+
   // ===== AUTO PRESENCE SETTINGS =====
   ALWAYS_ONLINE: process.env.ALWAYS_ONLINE || "false",
   AUTO_TYPING: process.env.AUTO_TYPING || "false",
@@ -80,11 +81,11 @@ export default {
 
   // ===== MEDIA & AUTOMATION =====
   MENTION_REPLY: process.env.MENTION_REPLY || "false",
-  MENU_IMAGE_URL: process.env.MENU_IMAGE_URL || "https://files.catbox.moe/6zd0ru.jpg",
-  BOT_MEDIA_URL: process.env.BOT_MEDIA_URL || "https://files.catbox.moe/6zd0ru.jpg",
-  AUDIO_URL: process.env.AUDIO_URL || 'https://files.catbox.moe/0toicz.mp3',
+  MENU_IMAGE_URL: process.env.MENU_IMAGE_URL || "https://files.catbox.moe/example.jpg",
+  BOT_MEDIA_URL: process.env.BOT_MEDIA_URL || "https://youtube.com/@rfkmod4333?si=UsHFEUzyFnaPp35Z",
+  AUDIO_URL: process.env.AUDIO_URL || "https://files.catbox.moe/example.mp3",
   AUTO_DOWNLOADER: process.env.AUTO_DOWNLOADER || "false",
-  
+
   // ===== SECURITY & ANTI-FEATURES =====
   ANTI_DELETE: process.env.ANTI_DELETE || "true",
   ANTI_DELETE_PATH: process.env.ANTI_DELETE_PATH || "inbox",
@@ -94,23 +95,23 @@ export default {
   ANTI_BOT: process.env.ANTI_BOT || "false",
   PM_BLOCKER: process.env.PM_BLOCKER || "false",
   ANTI_MENTION: process.env.ANTI_MENTION || "false",
-  ANTI_STATUS_MENTION: process.env.ANTI_STATUS_MENTION || "false",
+  ANTI_STATUS_MENTION: process.env.ANTI_STATUS_MENTION || "",
   ANTI_EDIT: process.env.ANTI_EDIT || "true",
-  ANTIEDIT_PATH: process.env.ANTIEDIT_PATH || "inbox",
+  ANTI_EDIT_PATH: process.env.ANTI_EDIT_PATH || "inbox",
 
   // ===== BOT BEHAVIOR & APPEARANCE =====
-  DESCRIPTION: process.env.DESCRIPTION || "*© ᴘᴏᴡᴇʀᴇᴅ ʙʏ Jᴀᴡᴀᴅ TᴇᴄʜX*",
+  DESCRIPTION: process.env.DESCRIPTION || "RFK MOS WhatsApp Bot by RFK CHEKUTHAAN",
   AUTO_LIKE_STATUS: process.env.AUTO_LIKE_STATUS || "false",
   AUTO_STATUS_SEEN: process.env.AUTO_STATUS_SEEN || "true",
   AUTO_BIO: process.env.AUTO_BIO || "false",
-  
+
   // ===== WELCOME & GOODBYE SETTINGS =====
   WELCOME: process.env.WELCOME || "false",
   GOODBYE: process.env.GOODBYE || "false",
   ADMIN_ACTION: process.env.ADMIN_ACTION || "false",
-  WELCOME_MESSAGE: process.env.WELCOME_MESSAGE || "*_@user joined the group, welcome! 🎉_*",
-  GOODBYE_MESSAGE: process.env.GOODBYE_MESSAGE || "*_@user has left the group, we will miss them! 👋_*",
+  WELCOME_MESSAGE: process.env.WELCOME_MESSAGE || "Hello @user",
+  GOODBYE_MESSAGE: process.env.GOODBYE_MESSAGE || "Goodbye @user",
 
-  VERSION: process.env.VERSION || "10.0 Bᴇᴛᴀ",
-  TIMEZONE: process.env.TIMEZONE || "Asia/Karachi",
+  VERSION: process.env.VERSION || "7.0.0 BETA",
+  TIMEZONE: process.env.TIMEZONE || "Asia/Kolkata",
 };
